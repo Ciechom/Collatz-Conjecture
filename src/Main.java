@@ -3,8 +3,12 @@ import javax.swing.*;
 public class Main {
 
     public static void main(String[] args) {
-        int n = Integer.parseInt(JOptionPane.showInputDialog("Podaj liczbe"));
-
+        int n;
+        if(System.getProperty("user.language").equalsIgnoreCase("pl")){
+            n = Integer.parseInt(JOptionPane.showInputDialog("Podaj liczbe"));
+        }else{
+            n = Integer.parseInt(JOptionPane.showInputDialog("Write your number"));
+        }
         int kroki = 0;
 
         while (n > 1) {
