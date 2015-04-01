@@ -17,6 +17,5 @@ public class Main {
             kroki++;
         }
         System.out.println(kroki);
-
     }
 }
